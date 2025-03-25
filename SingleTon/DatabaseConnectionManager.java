@@ -1,4 +1,4 @@
-package SingleTonClass;
+package SingleTon;
 
 import java.sql.*;
 

@@ -4,7 +4,7 @@ application's lifecycle to efficiently manage database resources and prevent mul
 unnecessary connections. */
 
 
-package SingleTonClass;
+package SingleTon;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
