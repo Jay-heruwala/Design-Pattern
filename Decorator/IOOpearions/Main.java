@@ -10,8 +10,8 @@ public class Main {
     public static void main(String[] args) {
         try {
             // Write the Data OutPutStream
-            String msg = "Om Namah Shivay";
-            OutputStream os = new FileOutputStream("Test.txt");
+            String msg = "We are laerning Decorator design pattern";
+            OutputStream os = new FileOutputStream("Text.txt");
             LoggingOutputStream lo = new LoggingOutputStream(os);
             lo.write(msg.getBytes());
             lo.display();
