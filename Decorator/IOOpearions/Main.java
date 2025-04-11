@@ -18,7 +18,7 @@ public class Main {
             lo.close();
 
             // Read the Data InputStream
-            InputStream is = new FileInputStream("Test.txt");
+            InputStream is = new FileInputStream("Text.txt");
             LoggingInputStream li = new LoggingInputStream(is);
 
             while (li.read() != -1)
