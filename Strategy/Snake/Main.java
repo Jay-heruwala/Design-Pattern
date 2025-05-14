@@ -2,12 +2,17 @@ package Strategy.Snake;
 
 public class Main {
     public static void main(String[] args) {
-        Snake cobra = new Snake("Cobra", true);
-        Snake pythonSnake = new Snake("Python", false);
+        Snake snake = new Python();
 
-        PoisonStrategy poisonToUnpoisonStrategy = new PoisonToUnpoisonStrategy();
-        PoisonStrategy unpoisonToPoisonStrategy = new UnpoisonToPoisonStrategy();
+        System.out.println(snake.performBite());
+        snake.changeStrategy(new Nonpoisonous());
+        System.out.println(snake.performBite());
 
-        System.out.println(cobra.setPoisonStrategy(poisonToUnpoisonStrategy));
+        snake = new Cobra();
+        System.out.println(snake.performBite());
+        snake.changeStrategy(new PoisonousBite());
+        System.out.println(snake.performBite());
+
+
     }
 }
